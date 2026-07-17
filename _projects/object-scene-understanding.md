@@ -2,6 +2,7 @@
 layout: page
 title: 3D Scene Understanding
 description: An online and offline RGB-D pipeline for 3D detection and scene graphs.
+img: assets/img/projects/scene-understanding.svg
 importance: 6
 category: work
 related_publications: false

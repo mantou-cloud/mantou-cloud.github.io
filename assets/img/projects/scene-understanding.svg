@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">3D scene understanding pipeline</title>
+  <desc id="desc">RealSense RGB-D data is localized with ORB-SLAM3, detected and fused with CuTR and BoxFusion, classified with OpenCLIP and Qwen-VL, and exported as a world-frame scene graph.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6fbff"/>
+      <stop offset="1" stop-color="#f7f5ff"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#1a3355" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#5b7190"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#bg2)"/>
+  <text x="64" y="82" font-family="Inter, Arial, sans-serif" font-size="39" font-weight="700" fill="#142238">3D Scene Understanding</text>
+  <text x="65" y="119" font-family="Inter, Arial, sans-serif" font-size="20" fill="#5b6d82">RGB-D observations to semantic world-frame relations</text>
+
+  <g filter="url(#shadow2)" font-family="Inter, Arial, sans-serif">
+    <rect x="48" y="185" width="185" height="240" rx="20" fill="#ffffff" stroke="#b9d8e8"/>
+    <circle cx="140" cy="247" r="36" fill="#e5f5fb"/>
+    <rect x="113" y="229" width="54" height="36" rx="8" fill="none" stroke="#2886ad" stroke-width="5"/>
+    <circle cx="140" cy="247" r="10" fill="none" stroke="#2886ad" stroke-width="5"/>
+    <text x="140" y="326" text-anchor="middle" font-size="24" font-weight="700" fill="#18283d">RealSense</text>
+    <text x="140" y="358" text-anchor="middle" font-size="18" fill="#65778c">RGB-D + IMU</text>
+    <text x="140" y="388" text-anchor="middle" font-size="16" fill="#8a98a8">D435i stream</text>
+
+    <rect x="282" y="185" width="185" height="240" rx="20" fill="#ffffff" stroke="#becbeb"/>
+    <circle cx="374" cy="247" r="36" fill="#e9edff"/>
+    <path d="M351 263l17-35 12 19 17-8" fill="none" stroke="#526ad0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="397" cy="239" r="6" fill="#526ad0"/>
+    <text x="374" y="326" text-anchor="middle" font-size="24" font-weight="700" fill="#18283d">ORB-SLAM3</text>
+    <text x="374" y="358" text-anchor="middle" font-size="18" fill="#65778c">Camera pose</text>
+    <text x="374" y="388" text-anchor="middle" font-size="16" fill="#8a98a8">World alignment</text>
+
+    <rect x="516" y="155" width="205" height="300" rx="20" fill="#ffffff" stroke="#b9d7ca"/>
+    <rect x="538" y="176" width="161" height="35" rx="17" fill="#e4f5ed"/>
+    <text x="619" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#277b61">GEOMETRY</text>
+    <path d="M576 251l43-23 43 23v47l-43 23-43-23z M619 228v47m-43-24l43 24 43-24" fill="none" stroke="#2d8b70" stroke-width="5" stroke-linejoin="round"/>
+    <text x="619" y="359" text-anchor="middle" font-size="24" font-weight="700" fill="#18283d">CuTR</text>
+    <text x="619" y="390" text-anchor="middle" font-size="20" fill="#65778c">+ BoxFusion</text>
+    <text x="619" y="421" text-anchor="middle" font-size="16" fill="#8a98a8">3D OBB fusion</text>
+
+    <rect x="770" y="155" width="195" height="300" rx="20" fill="#ffffff" stroke="#dac5ea"/>
+    <rect x="791" y="176" width="153" height="35" rx="17" fill="#f2e9f8"/>
+    <text x="868" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#8754a5">SEMANTICS</text>
+    <circle cx="868" cy="272" r="42" fill="#f4ebf9"/>
+    <path d="M847 272h42M868 251v42" stroke="#8754a5" stroke-width="6" stroke-linecap="round"/>
+    <text x="868" y="359" text-anchor="middle" font-size="23" font-weight="700" fill="#18283d">OpenCLIP</text>
+    <text x="868" y="390" text-anchor="middle" font-size="20" fill="#65778c">+ Qwen-VL</text>
+    <text x="868" y="421" text-anchor="middle" font-size="16" fill="#8a98a8">Labels + relations</text>
+
+    <rect x="1014" y="185" width="150" height="240" rx="20" fill="#ffffff" stroke="#e3c8b2"/>
+    <circle cx="1089" cy="247" r="36" fill="#fff0e4"/>
+    <circle cx="1070" cy="240" r="7" fill="#d87b37"/>
+    <circle cx="1107" cy="231" r="7" fill="#d87b37"/>
+    <circle cx="1094" cy="268" r="7" fill="#d87b37"/>
+    <path d="M1076 239l24-6m-27 12l16 18m14-26l-7 25" stroke="#d87b37" stroke-width="4"/>
+    <text x="1089" y="326" text-anchor="middle" font-size="22" font-weight="700" fill="#18283d">Scene Graph</text>
+    <text x="1089" y="358" text-anchor="middle" font-size="17" fill="#65778c">JSON + Rerun</text>
+    <text x="1089" y="388" text-anchor="middle" font-size="15" fill="#8a98a8">World frame</text>
+  </g>
+
+  <g fill="none" stroke="#5b7190" stroke-width="4" marker-end="url(#arrow2)">
+    <path d="M233 305H275"/>
+    <path d="M467 305H509"/>
+    <path d="M721 305H763"/>
+    <path d="M965 305H1007"/>
+  </g>
+
+  <rect x="282" y="510" width="683" height="66" rx="18" fill="#1c3049"/>
+  <text x="624" y="551" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Offline dataset pipeline  ·  ROS 2 online fusion  ·  Rerun visualization</text>
+</svg>

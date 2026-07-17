@@ -2,12 +2,13 @@
 layout: page
 title: Koala One Composite Robot
 description: A speech-driven quadruped mobile manipulator for navigation and grasping.
+img: assets/img/projects/koala-one.jpg
 importance: 3
 category: work
 related_publications: false
 ---
 
-Led the development of **Koala One** at Shanghai Magic AI (上海码极客人工智能科技有限公司): a speech-driven composite robot that combines a Unitree Go2 EDU quadruped, an ARX X5 arm, dual RealSense D435i cameras, and onboard inference.
+Led the development of **Koala One** at Shanghai Magic AI: a speech-driven composite robot that combines a Unitree Go2 EDU quadruped, an ARX X5 arm, dual RealSense D435i cameras, and onboard inference.
 
 ## System workflow
 

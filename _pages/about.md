@@ -55,7 +55,7 @@ May 2026 - Jul. 2026
 
 Built and deployed a CARLA-based closed-loop simulation toolchain. Integrated five types of road environments, OpenDRIVE road networks, Waymo open datasets, trajectory replay, traffic flow, ADS takeover, and real-time web streaming; deployed the system on a GPU+NPU environment at a JAC client site.
 
-**Shanghai Magic AI (上海码极客人工智能科技有限公司) - Algorithm Intern**<br>
+**Shanghai Magic AI - Algorithm Intern**<br>
 Aug. 2025 - Mar. 2026
 
 Led hardware selection, structural design, assembly, and debugging for the **Koala One** quadruped-mobile-manipulator platform based on Unitree Go2, ARX X5, and RealSense. Also developed a RealSense-based forklift cargo-volume measurement unit using Open3D and OpenCV; the system passed the client's first-phase acceptance.

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">MagicBot dual-engine architecture</title>
+  <desc id="desc">A speech and vision input flows through Whisper, PaliGemma, task planning, and a VLA controller to dual robot arms, with ROS integration and XTTS voice feedback.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f9ff"/>
+      <stop offset="1" stop-color="#eef7f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#15253b" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#58718f"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <text x="68" y="82" font-family="Inter, Arial, sans-serif" font-size="39" font-weight="700" fill="#142238">MagicBot Dual-Engine System</text>
+  <text x="69" y="119" font-family="Inter, Arial, sans-serif" font-size="20" fill="#5b6d82">From natural-language instruction to continuous robot action</text>
+
+  <g filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <rect x="55" y="190" width="165" height="205" rx="20" fill="#ffffff" stroke="#c9d4e4"/>
+    <circle cx="137" cy="245" r="31" fill="#e8efff"/>
+    <path d="M121 246h8l9-9v26l-9-9h-8z M146 240q12 12 0 24" fill="none" stroke="#486bd6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="137" y="315" text-anchor="middle" font-size="24" font-weight="700" fill="#18283d">Voice + RGB</text>
+    <text x="137" y="348" text-anchor="middle" font-size="17" fill="#68798c">Human instruction</text>
+
+    <rect x="275" y="155" width="230" height="275" rx="20" fill="#ffffff" stroke="#b9c8ed"/>
+    <rect x="296" y="176" width="188" height="35" rx="17" fill="#e9efff"/>
+    <text x="390" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#486bd6">BRAIN</text>
+    <text x="390" y="262" text-anchor="middle" font-size="25" font-weight="700" fill="#18283d">Whisper</text>
+    <text x="390" y="293" text-anchor="middle" font-size="17" fill="#68798c">Speech recognition</text>
+    <line x1="315" y1="322" x2="465" y2="322" stroke="#d9e0ea"/>
+    <text x="390" y="363" text-anchor="middle" font-size="25" font-weight="700" fill="#18283d">PaliGemma2-3B</text>
+    <text x="390" y="395" text-anchor="middle" font-size="17" fill="#68798c">Multimodal reasoning</text>
+
+    <rect x="560" y="190" width="175" height="205" rx="20" fill="#ffffff" stroke="#c9d4e4"/>
+    <circle cx="647" cy="246" r="31" fill="#fff1db"/>
+    <path d="M634 238h26M634 248h20M634 258h15" stroke="#d98724" stroke-width="5" stroke-linecap="round"/>
+    <text x="647" y="315" text-anchor="middle" font-size="23" font-weight="700" fill="#18283d">Atomic Tasks</text>
+    <text x="647" y="347" text-anchor="middle" font-size="17" fill="#68798c">Long-horizon plan</text>
+
+    <rect x="790" y="155" width="180" height="275" rx="20" fill="#ffffff" stroke="#a9d9ca"/>
+    <rect x="811" y="176" width="138" height="35" rx="17" fill="#e2f5ee"/>
+    <text x="880" y="200" text-anchor="middle" font-size="17" font-weight="700" fill="#27876c">CEREBELLUM</text>
+    <circle cx="880" cy="272" r="36" fill="#e4f6ef"/>
+    <path d="M862 272l12 12 24-28" fill="none" stroke="#27876c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="880" y="348" text-anchor="middle" font-size="30" font-weight="700" fill="#18283d">VLA</text>
+    <text x="880" y="381" text-anchor="middle" font-size="17" fill="#68798c">Continuous control</text>
+
+    <rect x="1025" y="190" width="130" height="205" rx="20" fill="#ffffff" stroke="#c9d4e4"/>
+    <circle cx="1090" cy="247" r="32" fill="#ede9ff"/>
+    <path d="M1073 263v-25m0 12h19m0 0v-17m0 17h14m0 0v28" fill="none" stroke="#7057bf" stroke-width="6" stroke-linecap="round"/>
+    <text x="1090" y="315" text-anchor="middle" font-size="22" font-weight="700" fill="#18283d">Robot</text>
+    <text x="1090" y="346" text-anchor="middle" font-size="16" fill="#68798c">Dual-arm action</text>
+  </g>
+
+  <g fill="none" stroke="#58718f" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M220 292H268"/>
+    <path d="M505 292H553"/>
+    <path d="M735 292H783"/>
+    <path d="M970 292H1018"/>
+  </g>
+
+  <rect x="275" y="486" width="695" height="67" rx="18" fill="#172b43"/>
+  <text x="622" y="528" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">ROS backbone · hardware initialization · multi-arm coordination</text>
+  <path d="M1025 365 C1000 465 930 477 925 486" fill="none" stroke="#6e859f" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+  <text x="1018" y="461" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="17" fill="#5d7188">XTTS voice feedback</text>
+</svg>

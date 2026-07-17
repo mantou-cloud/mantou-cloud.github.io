@@ -2,6 +2,7 @@
 layout: page
 title: MagicBot Dual-Engine System
 description: A ROS-based VLM-VLA robot with speech-driven task execution.
+img: assets/img/projects/magicbot-architecture.svg
 importance: 4
 category: work
 related_publications: false

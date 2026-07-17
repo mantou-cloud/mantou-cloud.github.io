@@ -2,6 +2,7 @@
 layout: page
 title: Closed-Loop Driving Simulation
 description: A CARLA-based autonomous-driving simulation and deployment toolchain.
+img: assets/img/projects/closed-loop-driving.jpg
 importance: 1
 category: work
 related_publications: false

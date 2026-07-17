@@ -2,6 +2,7 @@
 layout: page
 title: MiVLA on LocoMan
 description: The complete real-robot pipeline for a quadruped dual-arm platform.
+img: assets/img/projects/mivla-locoman.jpg
 importance: 2
 category: work
 related_publications: false

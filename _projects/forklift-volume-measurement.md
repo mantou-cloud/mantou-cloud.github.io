@@ -2,6 +2,7 @@
 layout: page
 title: Forklift Cargo Measurement
 description: A two-second RGB-D cargo-dimension measurement unit for Hangcha Group.
+img: assets/img/projects/forklift-volume.jpg
 importance: 5
 category: work
 related_publications: false
