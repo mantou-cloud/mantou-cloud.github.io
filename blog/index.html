@@ -41,11 +41,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "projects-embodied-multimodal-agent",
+          title: 'Embodied Multimodal Agent',
+          description: "A ROS-based embodied system combining vision-language understanding and action planning.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/embodied-agent/";
+            },},{id: "projects-object-and-scene-understanding-system",
+          title: 'Object and Scene Understanding System',
+          description: "Real-time 3D object detection and spatial scene understanding with RGB-D sensing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/object-scene-understanding/";
             },},{id: "projects-personal-portfolio-website",
           title: 'Personal Portfolio Website',
           description: "An English portfolio built with al-folio and deployed on GitHub Pages.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/personal-website/";
+            },},{id: "projects-vision-language-action-research-for-autonomous-driving",
+          title: 'Vision-Language-Action Research for Autonomous Driving',
+          description: "Multimodal policy research and engineering completed during an algorithm internship at DeepRoute.ai.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vla-autonomous-driving/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
@@ -57,6 +72,13 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/resume.pdf", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
