@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.Eng. Student · Embodied AI · Robot Learning · Multimodal Perception
+subtitle: M.Eng. Student | Embodied AI | Multimodal Perception | Robotics
 
 profile:
   align: right
@@ -25,43 +25,52 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am **Kaiyuan Deng**, an M.Eng. student in Computer Technology at the **University of Electronic Science and Technology of China (UESTC)**. My research focuses on **embodied intelligence, robot learning, multimodal perception, and vision-language-action models**.
+I am **Kaiyuan Deng**, an M.Eng. student in Computer Technology at the **University of Electronic Science and Technology of China (UESTC)**. My research focuses on **embodied intelligence and multimodal perception**, with particular interests in robotic manipulation and multimodal large language models.
 
-I am interested in enabling robots to perceive, reason, and act reliably in complex environments. My recent work explores few-shot high-efficiency perception, multimodal reasoning for robotic manipulation, and generalizable vision-language-action policies.
+My work spans egocentric visual reasoning, vision-language-action learning, 3D hand-trajectory prediction, high-value data selection, and embodied robotic systems.
 
 ## Research interests
 
-- Embodied intelligence and robot learning
-- Vision-language-action models and multimodal large language models
-- 3D perception, visual reasoning, and few-shot learning
-- Robotic manipulation and autonomous driving
+- Embodied intelligence and robotic manipulation
+- Multimodal large language models and vision-language-action models
+- Egocentric visual reasoning and 3D trajectory prediction
+- Robot perception, simulation, and system integration
 
 ## Education
 
-**University of Electronic Science and Technology of China (UESTC)**  
-M.Eng. in Computer Technology, School of Computer Science and Engineering · Sep. 2024 – Jun. 2027 (expected)
+**University of Electronic Science and Technology of China (UESTC)**<br>
+Professional M.Eng. in Computer Technology, School of Computer Science and Engineering<br>
+Sep. 2024 - Jun. 2027 (expected) | Graduate Academic Scholarship
 
-**Wuhan University of Technology**  
-B.Eng. in Software Engineering · Sep. 2020 – Jun. 2024  
-GPA: **3.98/4.00** · Ranked **1st** in the major
+**University of Electronic Science and Technology of China (UESTC)**<br>
+B.Eng. in Data Science and Big Data Technology, School of Computer Science and Engineering<br>
+Sep. 2020 - Jun. 2024 | GPA: **3.98/4.00**
+
+Received First-Class Academic Scholarships for two consecutive years, a provincial second prize in the Datang Cup, and a provincial second prize in the Huawei Cup.
 
 ## Experience
 
-**DeepRoute.ai — Algorithm Intern** · Aug. 2025 – Mar. 2026
+**Huawei Technologies, 2012 Laboratories - Autonomous Driving Simulation R&D Intern**<br>
+May 2026 - Jul. 2026
 
-Worked on vision-language-action research and engineering for autonomous-driving scenarios, including data preprocessing and annotation, model evaluation, simulation-based validation, and deployment-oriented tooling.
+Built and deployed a CARLA-based closed-loop simulation toolchain. Integrated five types of road environments, OpenDRIVE road networks, Waymo open datasets, trajectory replay, traffic flow, ADS takeover, and real-time web streaming; deployed the system on a GPU+NPU environment at a JAC client site.
+
+**Shanghai Mageek Artificial Intelligence Technology Co., Ltd. - Algorithm Intern**<br>
+Aug. 2025 - Mar. 2026
+
+Led hardware selection, structural design, assembly, and debugging for the **Koala One** quadruped-mobile-manipulator platform based on Unitree Go2, ARX X5, and RealSense. Also developed a RealSense-based forklift cargo-volume measurement unit using Open3D and OpenCV; the system passed the client's first-phase acceptance.
 
 ## Selected research
 
-- **Ego3S:** a three-stage framework for efficient egocentric visual reasoning, with reinforcement-learning-based reasoning optimization. *ICML 2026 manuscript*.
-- **MiVLA:** a general vision-language-action model for robotic manipulation with multimodal instruction following and action generation. *CVPR 2026 Findings manuscript*.
-- **H2O-CR:** a unified 3D hand-object interaction detection framework for first-person vision. *ICME 2026 manuscript*.
-- **Truth in the Few:** confidence-aware multimodal reasoning under limited supervision. *IEEE TMM manuscript under review*.
+- **Ego3S: A Three-Stage Framework for Efficient Egocentric Visual Reasoning** - ICML 2026, second author. Uses counterfactual filtering, interaction-centered reinforcement learning, and curriculum resampling; exceeds the baseline with 26.5% of the data while reducing computation by more than 46%.
+- **MiVLA: A General Vision-Language-Action Model via Human-Robot Mutual Imitation Pretraining** - CVPR 2026 Findings, co-author. Contributed the full real-robot pipeline for a LocoMan quadruped-dual-arm platform, including assembly, VR teleoperation data collection, Isaac Gym integration, and model deployment.
+- **First-Person 3D Hand-Trajectory Prediction via Visual Causal Intervention** - ICME 2026, first author. Introduces a causal-intervention plug-in and the H2O-CR and EgoPAT3D-CR robustness benchmarks; achieves state-of-the-art results on four datasets.
+- **Truth in the Few: High-Value Data Selection for Multimodal Reasoning** - IEEE TMM, under review, second author. Combines causal and attention-based filtering with difficulty-aware replacement; improves performance using 9.3% of the training data while reducing computation by more than 43%.
 
 ## Technical skills
 
-**Programming:** Python, C/C++  
-**Frameworks & tools:** PyTorch, ROS/ROS 2, OpenCV, Isaac Sim, Unreal Engine, Linux, Git  
-**Languages:** Mandarin Chinese (native), English (professional working proficiency)
+**Programming:** Python, C/C++<br>
+**Frameworks and tools:** PyTorch, ROS/ROS 2, OpenCV, Isaac Sim, Unreal Engine, Linux, Git<br>
+**English:** CET-6 passed; CET-4 excellent
 
-See my [projects](/projects/), explore my work on [GitHub](https://github.com/mantou-cloud), or [download my résumé](/assets/pdf/resume.pdf).
+See my [projects](/projects/), explore my work on [GitHub](https://github.com/mantou-cloud), or [download my resume](/assets/pdf/resume.pdf).

@@ -1,19 +1,19 @@
 ---
 layout: page
 title: 3D Scene Understanding
-description: Real-time object localization and spatial reasoning with RGB-D sensing.
+description: An RGB-D pipeline for 3D detection and scene-relation graph generation.
 importance: 3
 category: work
 related_publications: false
 ---
 
-Built a real-time perception system for 3D object localization and scene understanding using RGB-D input.
+Built a complete pipeline from RGB-D acquisition to 3D object detection and scene-relation graph generation.
 
 ## Highlights
 
-- Combined ORB-SLAM3 with Intel RealSense sensing for camera tracking and mapping
-- Implemented 3D object localization from visual detections and depth information
-- Constructed spatial relationships between detected objects
-- Exposed scene information through an API for downstream reasoning and interaction
+- Synchronized RGB-D data acquisition with ORB-SLAM3 and Intel RealSense
+- Used BoxFusion for 3D object detection
+- Generated scene-relation graphs with a large-model API
+- Implemented both offline and online deployment modes
 
-**Technologies:** C++, Python, ORB-SLAM3, Intel RealSense, OpenCV
+**Technologies:** ORB-SLAM3, Intel RealSense, BoxFusion, large-model APIs

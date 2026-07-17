@@ -1,19 +1,20 @@
 ---
 layout: page
-title: Embodied AI Agent
-description: A ROS-based system for multimodal understanding and action planning.
+title: Dual-Engine Embodied Robot
+description: A ROS-based brain-cerebellum robot architecture for long-horizon tasks.
 importance: 2
 category: work
 related_publications: false
 ---
 
-Developed an embodied multimodal agent that connects visual perception, language understanding, task decomposition, and robot control.
+Developed the **Dual-Engine Intelligence** system as part of an industry-university-research innovation project.
 
 ## Highlights
 
-- Integrated a vision-language model into a ROS-based robotic system
-- Designed a modular pipeline for instruction understanding and task planning
-- Explored vision-language-action policies for long-horizon tasks
-- Evaluated system behavior in simulated and physical environments
+- Built a hierarchical brain-cerebellum architecture with ROS
+- Used a VLM to decompose long-horizon instructions into atomic tasks
+- Used a VLA model to map tasks to continuous robotic-arm actions
+- Integrated speech, reasoning, and execution into an end-to-end interaction loop
+- Led system integration and deployment for desktop cleanup and food-ordering scenarios
 
-**Technologies:** ROS, Python, vision-language models, VLA, robot control
+**Technologies:** ROS, VLM, VLA, speech interaction, robotic manipulation
