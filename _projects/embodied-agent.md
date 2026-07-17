@@ -1,20 +1,22 @@
 ---
 layout: page
-title: Dual-Engine Embodied Robot
-description: A ROS-based brain-cerebellum robot architecture for long-horizon tasks.
-importance: 2
+title: MagicBot Dual-Engine System
+description: A ROS-based VLM-VLA robot with speech-driven task execution.
+importance: 4
 category: work
 related_publications: false
 ---
 
-Developed the **Dual-Engine Intelligence** system as part of an industry-university-research innovation project.
+Developed **MagicBot** for the Dual-Engine Intelligence industry-university-research project. The system follows a brain-cerebellum architecture: a VLM understands multimodal observations and decomposes long-horizon instructions, while a VLA maps atomic tasks to continuous robot actions.
 
-## Highlights
+## My role
 
-- Built a hierarchical brain-cerebellum architecture with ROS
-- Used a VLM to decompose long-horizon instructions into atomic tasks
-- Used a VLA model to map tasks to continuous robotic-arm actions
-- Integrated speech, reasoning, and execution into an end-to-end interaction loop
-- Led system integration and deployment for desktop cleanup and food-ordering scenarios
+- Fine-tuned PaliGemma2-3B on approximately 40,000-50,000 multimodal samples using LLaMA-Factory, eight A100 GPUs, and DeepSpeed ZeRO-3
+- Built the complete demo stack, including Whisper speech recognition, streaming XTTS synthesis, LLM prompting, VLM/VLA inference, multi-arm interaction, hardware initialization, and ROS integration
+- Connected perception, reasoning, speech, and manipulation into an end-to-end human-robot interaction loop
 
-**Technologies:** ROS, VLM, VLA, speech interaction, robotic manipulation
+## Outcome
+
+The deployed system executed desktop cleanup and food-ordering tasks through natural-language interaction, demonstrating a complete listen-think-act workflow.
+
+**Technologies:** ROS, PaliGemma2-3B, LLaMA-Factory, DeepSpeed ZeRO-3, VLA, Whisper, XTTS

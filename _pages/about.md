@@ -55,22 +55,43 @@ May 2026 - Jul. 2026
 
 Built and deployed a CARLA-based closed-loop simulation toolchain. Integrated five types of road environments, OpenDRIVE road networks, Waymo open datasets, trajectory replay, traffic flow, ADS takeover, and real-time web streaming; deployed the system on a GPU+NPU environment at a JAC client site.
 
-**Shanghai Mageek Artificial Intelligence Technology Co., Ltd. - Algorithm Intern**<br>
+**Shanghai Magic AI (上海码极客人工智能科技有限公司) - Algorithm Intern**<br>
 Aug. 2025 - Mar. 2026
 
 Led hardware selection, structural design, assembly, and debugging for the **Koala One** quadruped-mobile-manipulator platform based on Unitree Go2, ARX X5, and RealSense. Also developed a RealSense-based forklift cargo-volume measurement unit using Open3D and OpenCV; the system passed the client's first-phase acceptance.
 
 ## Selected research
 
-- **Ego3S: A Three-Stage Framework for Efficient Egocentric Visual Reasoning** - ICML 2026, second author. Uses counterfactual filtering, interaction-centered reinforcement learning, and curriculum resampling; exceeds the baseline with 26.5% of the data while reducing computation by more than 46%.
-- **MiVLA: A General Vision-Language-Action Model via Human-Robot Mutual Imitation Pretraining** - CVPR 2026 Findings, co-author. Contributed the full real-robot pipeline for a LocoMan quadruped-dual-arm platform, including assembly, VR teleoperation data collection, Isaac Gym integration, and model deployment.
-- **First-Person 3D Hand-Trajectory Prediction via Visual Causal Intervention** - ICME 2026, first author. Introduces a causal-intervention plug-in and the H2O-CR and EgoPAT3D-CR robustness benchmarks; achieves state-of-the-art results on four datasets.
-- **Truth in the Few: High-Value Data Selection for Multimodal Reasoning** - IEEE TMM, under review, second author. Combines causal and attention-based filtering with difficulty-aware replacement; improves performance using 9.3% of the training data while reducing computation by more than 43%.
+### Ego3S: Select, Strengthen, and Synchronize for Efficient Egocentric Reasoning
 
-## Technical skills
+**ICML 2026**
 
-**Programming:** Python, C/C++<br>
-**Frameworks and tools:** PyTorch, ROS/ROS 2, OpenCV, Isaac Sim, Unreal Engine, Linux, Git<br>
-**English:** CET-6 passed; CET-4 excellent
+Shenshen Li, **Kaiyuan Deng**, Ruohuai Xie, Xing Xu, Heng Tao Shen, Yazhou Yao, Fumin Shen
+
+Ego3S addresses inertia thinking in large vision-language models through a three-stage training framework: counterfactual sample selection, interaction-centric reinforcement learning, and evolving curriculum recuration. It achieves stronger egocentric reasoning with 26.5% of the training data while reducing computation by more than 46%.
+
+### MiVLA: Towards Generalizable Vision-Language-Action Model with Human-Robot Mutual Imitation Pre-training
+
+**CVPR 2026 Findings**
+
+Zhenhan Yin, Xuanhan Wang, Jiahao Jiang, **Kaiyuan Deng**, Pengqi Chen, Shuangle Li, Chong Liu, Xing Xu, Jingkuan Song, Lianli Gao, Heng Tao Shen
+
+MiVLA learns cross-embodiment behavior priors from simulated robot demonstrations and human videos without real-robot data during pre-training. I independently delivered the complete LocoMan real-robot pipeline, including platform integration, VR teleoperation data collection, Isaac Gym validation, model deployment, and all LocoMan experiments.
+
+### Visual Causal Intervention for 3D Egocentric Multimodal Hand Trajectory Forecasting
+
+**ICME 2026**
+
+**Kaiyuan Deng**, Xun Jiang, Zheng Wang, Fumin Shen, Xing Xu
+
+This work identifies historical trajectories as a confounder that lets multimodal forecasting models bypass visual reasoning. The proposed VCI module reconstructs missing trajectory segments from visual evidence, blocks the spurious backdoor path, and establishes state-of-the-art results on the standard H2O-PT and EgoPAT3D-DT benchmarks and the new H2O-CR and EgoPAT3D-CR robustness benchmarks.
+
+### Truth in the Few: High-Value Data Selection for Efficient Multi-Modal Reasoning
+
+**IEEE Transactions on Multimedia (TMM), under review**
+
+Shenshen Li, **Kaiyuan Deng**, Lei Wang, Hao Yang, Chong Peng, Peng Yan, Fumin Shen, Heng Tao Shen, Xing Xu
+
+Truth in the Few introduces Reasoning Activation Potential (RAP), combining causal discrepancy, attention confidence, and difficulty-aware replacement to identify high-value multimodal reasoning data. It improves performance with 9.3% of the training corpus while reducing computation by more than 43%.
 
 See my [projects](/projects/), explore my work on [GitHub](https://github.com/mantou-cloud), or [download my resume](/assets/pdf/resume.pdf).
