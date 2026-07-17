@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected engineering and software projects.
+description: Selected work in embodied AI, multimodal learning, and robotic perception.
 nav: true
 nav_order: 3
 display_categories: [work]

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Object and Scene Understanding System
-description: Real-time 3D object detection and spatial scene understanding with RGB-D sensing.
+title: 3D Scene Understanding
+description: Real-time object localization and spatial reasoning with RGB-D sensing.
 importance: 3
 category: work
 related_publications: false

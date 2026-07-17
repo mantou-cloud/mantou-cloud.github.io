@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Vision-Language-Action Research for Autonomous Driving
-description: Multimodal policy research and engineering completed during an algorithm internship at DeepRoute.ai.
+title: VLA for Autonomous Driving
+description: Multimodal policy research and engineering at DeepRoute.ai.
 importance: 1
 category: work
 related_publications: false

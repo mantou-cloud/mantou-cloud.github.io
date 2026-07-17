@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Embodied Multimodal Agent
-description: A ROS-based embodied system combining vision-language understanding and action planning.
+title: Embodied AI Agent
+description: A ROS-based system for multimodal understanding and action planning.
 importance: 2
 category: work
 related_publications: false
