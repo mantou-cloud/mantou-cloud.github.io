@@ -2,7 +2,7 @@
 layout: page
 title: Personal Portfolio Website
 description: An English portfolio built with al-folio and deployed on GitHub Pages.
-importance: 1
+importance: 4
 category: work
 related_publications: false
 ---
