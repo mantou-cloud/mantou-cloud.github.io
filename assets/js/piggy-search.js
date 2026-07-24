@@ -1,11 +1,12 @@
 (() => {
   const hiddenParentId = "hidden-easter-eggs";
+  const trigger = "pig";
   let attempts = 0;
 
   const configurePiggySearch = () => {
     const ninja = document.querySelector("ninja-keys");
 
-    if (!ninja || !Array.isArray(ninja.data)) {
+    if (!ninja || !Array.isArray(ninja.data) || ninja.dataset.piggySearchConfigured) {
       return false;
     }
 
@@ -17,16 +18,34 @@
       return false;
     }
 
-    ninja.data = ninja.data.map((action) =>
-      action === piggyAction
-        ? {
-            ...action,
-            title: "Piggy's Secret Corner",
-            keywords: "pig piggy panda 猪 猪猪 彩蛋",
-            parent: hiddenParentId,
-          }
-        : action,
-    );
+    const searchablePiggyAction = {
+      ...piggyAction,
+      title: trigger,
+      description: "",
+      keywords: trigger,
+      parent: hiddenParentId,
+    };
+
+    const removePiggyAction = () => {
+      if (ninja.data.some((action) => action.id === searchablePiggyAction.id)) {
+        ninja.data = ninja.data.filter((action) => action.id !== searchablePiggyAction.id);
+      }
+    };
+
+    const updatePiggyAction = (search) => {
+      const shouldShow = search.trim().toLowerCase() === trigger;
+      const isPresent = ninja.data.some((action) => action.id === searchablePiggyAction.id);
+
+      if (shouldShow && !isPresent) {
+        ninja.data = [...ninja.data, searchablePiggyAction];
+      } else if (!shouldShow && isPresent) {
+        removePiggyAction();
+      }
+    };
+
+    ninja.dataset.piggySearchConfigured = "true";
+    ninja.addEventListener("change", (event) => updatePiggyAction(event.detail.search));
+    removePiggyAction();
 
     return true;
   };
