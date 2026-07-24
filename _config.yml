@@ -190,6 +190,8 @@ collections:
     output: true
   projects:
     output: true
+  secrets:
+    output: true
   teachings:
     output: true
 
